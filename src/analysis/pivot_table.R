@@ -1,7 +1,7 @@
 # import the data from `gen/data-preparation/aggregated_df.csv`
 df <- read.csv("gen/data-preperation/aggregated_df.csv")
 
-pdf("gen/pivot/pivot.pdf")
+
 
 # create pivot table
 

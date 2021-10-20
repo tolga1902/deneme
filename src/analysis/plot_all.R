@@ -8,6 +8,7 @@ df$date <- as.Date(df$date)
 # group by date and calculate the sum of all reviews across neighbourhoods.
 df_groupby <- df %>% group_by(date) %>% summarise(num_reviews = sum(num_reviews))
 
+
 # plot the chart and store the visualisation.
 pdf("gen/plot_all/plot_all.pdf")
 plot(x = df_groupby$date, 
